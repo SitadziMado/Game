@@ -10,6 +10,11 @@ namespace Game
 {
     class Grid
     {
+        public Grid()
+        {
+
+        }
+
         struct LengthConstraint
         {
             public LengthConstraint(Tuple<int, int> pair, float length)
@@ -73,6 +78,8 @@ namespace Game
             for (int i = 0; i < mA.Count; ++i)
                 mA[i] = mGravity;
         }
+
+        public List<Vector3> Points { get { return mX; } }
 
         private const int Iterations = 1;
 

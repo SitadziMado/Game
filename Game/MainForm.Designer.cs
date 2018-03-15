@@ -38,6 +38,8 @@
             this.DoubleBuffered = true;
             this.Name = "MainForm";
             this.Text = "Игра";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
             this.ResumeLayout(false);
 
         }
